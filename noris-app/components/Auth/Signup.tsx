@@ -2,7 +2,10 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
+import toast from "react-hot-toast";
+import { useAuth } from "@/app/context/AuthContext";
 
 const Signup = () => {
   const [data, setData] = useState({
@@ -11,6 +14,27 @@ const Signup = () => {
     email: "",
     password: "",
   });
+  const [loading, setLoading] = useState(false);
+  const { register } = useAuth();
+  const router = useRouter();
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      const name = `${data.firstName} ${data.lastName}`.trim();
+      await register(data.email, data.password, name);
+      toast.success("Account created successfully");
+      router.push("/");
+    } catch (error) {
+      const message =
+        error instanceof Error ? error.message : "Failed to create account";
+      toast.error(message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <>
@@ -123,12 +147,13 @@ const Signup = () => {
               <span className="dark:bg-stroke-dark hidden h-[1px] w-full max-w-[200px] bg-stroke dark:bg-strokedark sm:block"></span>
             </div>
 
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="mb-7.5 flex flex-col gap-7.5 lg:mb-12.5 lg:flex-row lg:justify-between lg:gap-14">
                 <input
                   name="firstName"
                   type="text"
                   placeholder="First name"
+                  required
                   value={data.firstName}
                   onChange={(e) =>
                     setData({ ...data, [e.target.name]: e.target.value })
@@ -153,6 +178,7 @@ const Signup = () => {
                   name="email"
                   type="email"
                   placeholder="Email address"
+                  required
                   value={data.email}
                   onChange={(e) =>
                     setData({ ...data, [e.target.name]: e.target.value })
@@ -164,6 +190,8 @@ const Signup = () => {
                   name="password"
                   type="password"
                   placeholder="Password"
+                  required
+                  minLength={8}
                   value={data.password}
                   onChange={(e) =>
                     setData({ ...data, [e.target.name]: e.target.value })
@@ -205,10 +233,12 @@ const Signup = () => {
                 </div>
 
                 <button
+                  type="submit"
                   aria-label="signup with email and password"
-                  className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
+                  disabled={loading}
+                  className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho disabled:cursor-not-allowed disabled:opacity-60 dark:bg-btndark dark:hover:bg-blackho"
                 >
-                  Create Account
+                  {loading ? "Creating account..." : "Create Account"}
                   <svg
                     className="fill-white"
                     width="14"

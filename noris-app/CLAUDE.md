@@ -16,7 +16,11 @@ npm run start                    # run production build
 npm run lint                     # next lint
 ```
 
-There is no test setup yet (see `z-things-to-do.md` for planned work, including unit tests, i18n, and Appwrite auth).
+See `z-things-to-do.md` for planned work.
+
+### Appwrite setup
+
+Copy `.env.example` to `.env.local` and fill in `NEXT_PUBLIC_APPWRITE_ENDPOINT` and `NEXT_PUBLIC_APPWRITE_PROJECT_ID` from an Appwrite project (enable the Email/Password auth method). Without these, the app still runs but Sign In/Sign Up will show a "not configured" error toast.
 
 Formatting uses Prettier with `prettier-plugin-tailwindcss` (`.prettierrc.json`) for automatic Tailwind class sorting.
 

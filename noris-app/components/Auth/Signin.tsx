@@ -2,13 +2,36 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 import { useState } from "react";
+import toast from "react-hot-toast";
+import { useAuth } from "@/app/context/AuthContext";
 
 const Signin = () => {
   const [data, setData] = useState({
     email: "",
     password: "",
   });
+  const [loading, setLoading] = useState(false);
+  const { login } = useAuth();
+  const router = useRouter();
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    setLoading(true);
+
+    try {
+      await login(data.email, data.password);
+      toast.success("Logged in successfully");
+      router.push("/");
+    } catch (error) {
+      const message =
+        error instanceof Error ? error.message : "Failed to log in";
+      toast.error(message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
     <>
@@ -121,12 +144,13 @@ const Signin = () => {
               <span className="dark:bg-stroke-dark hidden h-[1px] w-full max-w-[200px] bg-stroke dark:bg-strokedark sm:block"></span>
             </div>
 
-            <form>
+            <form onSubmit={handleSubmit}>
               <div className="mb-7.5 flex flex-col gap-7.5 lg:mb-12.5 lg:flex-row lg:justify-between lg:gap-14">
                 <input
-                  type="text"
+                  type="email"
                   placeholder="Email"
                   name="email"
+                  required
                   value={data.email}
                   onChange={(e) => setData({ ...data, email: e.target.value })}
                   className="w-full border-b border-stroke bg-white! pb-3.5 focus:border-waterloo focus:placeholder:text-black focus-visible:outline-hidden dark:border-strokedark dark:bg-black! dark:focus:border-manatee dark:focus:placeholder:text-white lg:w-1/2"
@@ -136,6 +160,7 @@ const Signin = () => {
                   type="password"
                   placeholder="Password"
                   name="password"
+                  required
                   value={data.password}
                   onChange={(e) =>
                     setData({ ...data, password: e.target.value })
@@ -183,10 +208,12 @@ const Signin = () => {
                 </div>
 
                 <button
+                  type="submit"
                   aria-label="login with email and password"
-                  className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
+                  disabled={loading}
+                  className="inline-flex items-center gap-2.5 rounded-full bg-black px-6 py-3 font-medium text-white duration-300 ease-in-out hover:bg-blackho disabled:cursor-not-allowed disabled:opacity-60 dark:bg-btndark dark:hover:bg-blackho"
                 >
-                  Log in
+                  {loading ? "Logging in..." : "Log in"}
                   <svg
                     className="fill-white"
                     width="14"

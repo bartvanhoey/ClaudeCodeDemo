@@ -11,6 +11,7 @@
     "test:watch": "vitest"
   },
   "dependencies": {
+    "appwrite": "^26.0.0",
     "framer-motion": "^12.0.6",
     "next": "16.0.10",
     "next-intl": "^4.13.0",

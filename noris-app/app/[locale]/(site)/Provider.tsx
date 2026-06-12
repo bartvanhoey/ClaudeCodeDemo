@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Lines from "@/components/Lines";
 import ScrollToTop from "@/components/ScrollToTop";
 import { ThemeProvider } from "next-themes";
+import { AuthProvider } from "../../context/AuthContext";
 import ToasterContext from "../../context/ToastContext";
 
 export default function ClientLayout({
@@ -18,12 +19,14 @@ export default function ClientLayout({
             attribute="class"
             defaultTheme="light"
         >
-            <Lines />
-            <Header />
-            <ToasterContext />
-            {children}
-            <Footer />
-            <ScrollToTop />
+            <AuthProvider>
+                <Lines />
+                <Header />
+                <ToasterContext />
+                {children}
+                <Footer />
+                <ScrollToTop />
+            </AuthProvider>
         </ThemeProvider>
     );
 }

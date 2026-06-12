@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 
+import AuthStatus from "./AuthStatus";
 import LanguageSwitcher from "./LanguageSwitcher";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
@@ -169,6 +170,8 @@ const Header = () => {
             >
               Get Pro 🔥
             </Link>
+
+            <AuthStatus />
           </div>
         </div>
       </div>
