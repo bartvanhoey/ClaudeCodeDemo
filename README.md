@@ -86,11 +86,19 @@ You can create custom skills and commands to automate specific tasks in your wor
   
 ## Demo Time
 
-### Demo Agentic Workflow
-
-
-
-
 ### Demo Claude Code in action
 
-In this example, we ask Claude to fix a failing test. It reads the test file, identifies the issue, and makes the necessary code changes to get the test passing — all while we watch it work in real time.
+In this demo we start from the [Solid Free Nextjs Template](https://github.com/NextJSTemplates/solid-nextjs) and walks you through setting up and enhancing a modern web application workflow by configuring project standards, styling, testing, reusable AI skills, multilingual support, and authentication.
+
+It includes creating a new Products page using a component-generation skill, generating AI-assisted commit messages, applying Noris design styling, adding German/French translations, and integrating Appwrite authentication to complete a production-ready developer workflow.
+
+### Demo Agentic Workflow
+
+In this demo, we build an automated competitive-intelligence workflow for Graw Radiosondes GmbH that collects and analyzes data from competitor websites, APIs, meteorological and defense-related sources to track new radiosonde products, marketing activity, target industries, use cases, and strategic trends.
+
+The workflow will then generate a professionally branded PDF report in Graw’s visual style, summarizing the latest competitor insights, product launches, and market developments for internal stakeholders and management review.
+
+## Useful Tutorials and Resources
+
+- [Claude Code Tutorial Net Ninja](https://youtube.com/playlist?list=PL4cUxeGkcC9g4YJeBqChhFJwKQ9TRiivY&si=ny3ls34MNLp8nGVZ)
+- [Agentic Workflows just changed AI Automation Forever!](https://www.youtube.com/watch?v=AO5aW01DKHo)
