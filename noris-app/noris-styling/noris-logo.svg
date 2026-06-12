@@ -1,0 +1,9 @@
+<svg class="svg-logo noris-logo" xmlns="http://www.w3.org/2000/svg" width="884.4" height="147.4" viewBox="0 0 884.4 147.4">
+  <path class="letter" data-letter="S" fill="currentColor" d="M874.2,1.4v32.6h-79.1c-5.5,0-9.3,3.5-9.3,9s3.2,8.1,7.3,9l57,12.5c20.9,4.4,34.3,19.8,34.3,39.3s-18.9,42.2-44.2,42.2h-83.8v-32.3h83.5c5.2,0,9.3-3.8,9.3-9.9s-2.6-8.4-7.6-9.6l-57.3-12.5c-20.4-4.7-33.7-19.8-33.7-39S769.2,1.4,794.2,1.4h80Z"></path>
+  <path class="letter" data-letter="O" fill="currentColor" d="M485.8,0C445.1,0,412.1,33,412.1,73.7s33,73.7,73.7,73.7,73.7-33,73.7-73.7S526.5,0,485.8,0ZM485.8,114.8c-22.7,0-41.1-18.4-41.1-41.1s18.4-41.1,41.1-41.1,41.1,18.4,41.1,41.1-18.4,41.1-41.1,41.1h0Z"></path>
+  <rect class="letter" data-letter="I" fill="currentColor" x="693.8" y="1.4" width="32.6" height="144.6"></rect>
+  <path class="letter" data-letter="R" fill="currentColor" d="M654.1,1.4c-40.7,0-73.7,33-73.7,73.7h0v70.9h32.6v-70.9h0c0-22.7,18.4-41.1,41.1-41.1h12.8V1.4h-12.8,0Z"></path>
+  <path class="letter" data-letter="N" fill="currentColor" d="M317.5,1.4h-73.7v144.6h32.6V34h41.1c22.7,0,41.1,18.4,41.1,41.1h0v70.9h32.6v-70.9h0c0-40.7-33-73.7-73.7-73.7Z"></path>
+  <polygon class="icon-part" data-icon-part="top" fill="var(--clr-noris-green)" points="136.1 1.4 0 1.4 0 63.8 198.4 63.8 136.1 1.4"></polygon>
+  <polygon class="icon-part" data-icon-part="bottom" fill="var(--clr-noris-blue-sky)" points="198.4 83.6 0 83.6 0 146 136.1 146 198.4 83.6"></polygon>
+</svg>
