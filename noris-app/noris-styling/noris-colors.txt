@@ -1,0 +1,207 @@
+--color-error-25: #fffbfa;
+--color-error-50: #fef3f2;
+--color-error-100: #fee4e2;
+--color-error-200: #fecdca;
+--color-error-300: #fda29b;
+--color-error-400: #f97066;
+--color-error-500: #f04438;
+--color-error-600: #d92d20;
+--color-error-700: #b42318;
+--color-error-800: #912018;
+--color-error-900: #7a271a;
+--color-error-950: #55160c;
+
+--color-gray-dark: #1a2231;
+
+--color-black: #101828;
+
+/* NORIS GREEN Shades */
+--color-noris-green-50: #00d27e;
+--color-noris-green-100: #00Bd71;
+--color-noris-green-200: #00A864;
+--color-noris-green-300: #009358;
+--color-noris-green-400: #007E4B;
+--color-noris-green-500: #00693F;
+--color-noris-green-600: #005432;
+--color-noris-green-700: #003F25;
+--color-noris-green-800: #002a19;
+--color-noris-green-900: #00150C;
+
+/* NORIS GREEN Tints (lighter from 50 → 900) */
+--color-noris-green-tint-50: #00d27e;
+--color-noris-green-tint-100: #19d68a;
+--color-noris-green-tint-200: #4cdfa4;
+--color-noris-green-tint-300: #32db97;
+--color-bg-noris-green-tint-900: #66e4b1;
+--color-noris-green-tint-500: #7fe8be;
+--color-noris-green-tint-600: #99edcb;
+--color-noris-green-tint-700: #b2f1d8;
+--color-noris-green-tint-800: #ccf6e5;
+--color-noris-green-tint-900: #e5faf2;
+
+/* NORIS DARK GREEN Shades */
+--color-noris-dark-green-50: #014948;
+--color-noris-dark-green-100: #004140;
+--color-noris-dark-green-200: #003a39;
+--color-noris-dark-green-300: #003332;
+--color-noris-dark-green-400: #002b2b;
+--color-noris-dark-green-500: #002424;
+--color-noris-dark-green-600: #001d1c;
+--color-noris-dark-green-700: #001515;
+--color-noris-dark-green-800: #000e0e;
+--color-noris-dark-green-900: #000707;
+
+/* NORIS DARK GREEN Tints (lighter from 50 → 900) */
+--color-noris-dark-green-tint-50: #014948;
+--color-noris-dark-green-tint-100: #1a5b5a;
+--color-noris-dark-green-tint-200: #336d6c;
+--color-noris-dark-green-tint-300: #4d7f7e;
+--color-noris-dark-green-tint-400: #669191;
+--color-noris-dark-green-tint-500: #80a4a3;
+--color-noris-dark-green-tint-600: #99b6b5;
+--color-noris-dark-green-tint-700: #b2c8c8;
+--color-noris-dark-green-tint-800: #ccdada;
+--color-noris-dark-green-tint-900: #e5ecec;
+
+/* NORIS Fresh GREEN Shades */
+--color-noris-fresh-green-50: #c5f120;
+--color-noris-fresh-green-100: #b1d81c;
+--color-noris-fresh-green-200: #9dc019;
+--color-noris-fresh-green-300: #89a816;
+--color-noris-fresh-green-400: #769013;
+--color-noris-fresh-green-500: #627810;
+--color-noris-fresh-green-600: #4e600c;
+--color-noris-fresh-green-700: #3b4809;
+--color-noris-fresh-green-800: #273006;
+--color-noris-fresh-green-900: #131803;
+
+/* NORIS fresh GREEN Tints*  (lighter from 50 → 900) */
+--color-noris-fresh-green-tint-50: #c5f120;
+--color-noris-fresh-green-tint-100: #caf236;
+--color-noris-fresh-green-tint-200: #d0f34c;
+--color-noris-fresh-green-tint-300: #d6f562;
+--color-noris-fresh-green-tint-400: #dcf679;
+--color-noris-fresh-green-tint-500: #e2f88f;
+--color-noris-fresh-green-tint-600: #e7f9a5;
+--color-noris-fresh-green-tint-700: #edfabc;
+--color-noris-fresh-green-tint-800: #f3fcd2;
+--color-noris-fresh-green-tint-900: #f9fde8;
+
+/* NORIS Light GREEN Shades */
+--color-noris-light-green-50: #d1ffb4;
+--color-noris-light-green-100: #bce5a2;
+--color-noris-light-green-200: #a7cc90;
+--color-noris-light-green-300: #92b27d;
+--color-noris-light-green-400: #7d996c;
+--color-noris-light-green-500: #687f5a;
+--color-noris-light-green-600: #536648;
+--color-noris-light-green-700: #3e4c36;
+--color-noris-light-green-800: #293324;
+--color-noris-light-green-900: #141912;
+
+/* NORIS light GREEN Tints  (lighter from 50 → 900) */
+--color-noris-light-green-tint-50: #d1ffb4;
+--color-noris-light-green-tint-100: #D5FFBB;
+--color-noris-light-green-tint-200: #daffc3;
+--color-noris-light-green-tint-300: #deffca;
+--color-noris-light-green-tint-400: #e3ffd2;
+--color-noris-light-green-tint-500: #e8ffd9;
+--color-noris-light-green-tint-600: #ecffe1;
+--color-noris-light-green-tint-700: #f1ffe8;
+--color-noris-light-green-tint-800: #f5fff0;
+--color-noris-light-green-tint-900: #fafff7;
+
+/* NORIS SKY BLUE Shades */
+--color-noris-sky-blue-50: #6bdff0;
+--color-noris-sky-blue-100: #60c8d8;
+--color-noris-sky-blue-200: #55B2C0;
+--color-noris-sky-blue-300: #4A9CA8;
+--color-noris-sky-blue-400: #408590;
+--color-noris-sky-blue-500: #356F78;
+--color-noris-sky-blue-600: #2A5960;
+--color-noris-sky-blue-700: #204248;
+--color-noris-sky-blue-800: #152c30;
+--color-noris-sky-blue-900: #0A1618;
+
+/* NORIS SKY BLUE Tints  (lighter from 50 → 900)  */
+--color-noris-sky-blue-tint-50: #6bdff0;
+--color-noris-sky-blue-tint-100: #79e2f1;
+--color-noris-sky-blue-tint-200: #88E5F3;
+--color-noris-sky-blue-tint-300: #97E8F4;
+--color-noris-sky-blue-tint-400: #A6EBF6;
+--color-noris-sky-blue-tint-500: #B5EFF7;
+--color-noris-sky-blue-tint-600: #C3F2F9;
+--color-noris-sky-blue-tint-700: #D2F5FA;
+--color-noris-sky-blue-tint-800: #e1f8fc;
+--color-noris-sky-blue-tint-900: #f0fbfd;
+
+/* NORIS OCEAN BLUE Shades */
+--color-noris-ocean-blue-50: #05a4d6;
+--color-noris-ocean-blue-100: #0493c0;
+--color-noris-ocean-blue-200: #0483ab;
+--color-noris-ocean-blue-300: #037295;
+--color-noris-ocean-blue-400: #036280;
+--color-noris-ocean-blue-500: #02526b;
+--color-noris-ocean-blue-600: #024155;
+--color-noris-ocean-blue-700: #013140;
+--color-noris-ocean-blue-800: #01202a;
+--color-noris-ocean-blue-900: #001015;
+
+/* NORIS OCEAN BLUE Tints  (lighter from 50 → 900) */
+--color-noris-ocean-blue-tint-50: #05a4d6;
+--color-noris-ocean-blue-tint-100: #1dadda;
+--color-noris-ocean-blue-tint-200: #36b6de;
+--color-noris-ocean-blue-tint-300: #50bfe2;
+--color-noris-ocean-blue-tint-400: #69c8e6;
+--color-noris-ocean-blue-tint-500: #82d1ea;
+--color-noris-ocean-blue-tint-600: #9bdaee;
+--color-noris-ocean-blue-tint-700: #b4e3f2;
+--color-noris-ocean-blue-tint-800: #cdecf6;
+--color-noris-ocean-blue-tint-900: #e6f5fa;
+
+/* NORIS PURPLE Shades */
+--color-noris-purple-50: #9f85d3;
+--color-noris-purple-100: #8f77bd;
+--color-noris-purple-200: #7f6aa8;
+--color-noris-purple-300: #6f5d93;
+--color-noris-purple-400: #5f4f7e;
+--color-noris-purple-500: #4f4269;
+--color-noris-purple-600: #3f3554;
+--color-noris-purple-700: #2f273f;
+--color-noris-purple-800: #1f1a2a;
+--color-noris-purple-900: #0f0d15;
+
+/* NORIS PURPLE Tints  (lighter from 50 → 900)  */
+--color-noris-purple-tint-50: #9f85d3;
+--color-noris-purple-tint-100: #a891d7;
+--color-noris-purple-tint-200: #b29ddb;
+--color-noris-purple-tint-300: #bba9e0;
+--color-noris-purple-tint-400: #c5b5e4;
+--color-noris-purple-tint-500: #cfc2e9;
+--color-noris-purple-tint-600: #d8ceed;
+--color-noris-purple-tint-700: #e2daf1;
+--color-noris-purple-tint-800: #ebe6f6;
+--color-noris-purple-tint-900: #f5f2fa;
+
+/*NORIS WARN ORANGE Shades*/
+--color-noris-warn-orange-50: #e67c5a;
+--color-noris-warn-orange-100: #cf6f51;
+--color-noris-warn-orange-200: #b86348;
+--color-noris-warn-orange-300: #a1563e;
+--color-noris-warn-orange-400: #8a4a36;
+--color-noris-warn-orange-500: #733e2d;
+--color-noris-warn-orange-600: #5c3124;
+--color-noris-warn-orange-700: #45251b;
+--color-noris-warn-orange-800: #2e1812;
+--color-noris-warn-orange-900: #170c09;
+/* NORIS WARN ORANGE Tints  (lighter from 50 → 900)  */
+--color-noris-warn-orange-tint-50: #e67c5a;
+--color-noris-warn-orange-tint-100: #e8896a;
+--color-noris-warn-orange-tint-200: #eb967a;
+--color-noris-warn-orange-tint-300: #eda38b;
+--color-noris-warn-orange-tint-400: #f0b09c;
+--color-noris-warn-orange-tint-500: #f2bdac;
+--color-noris-warn-orange-tint-600: #f5cabd;
+--color-noris-warn-orange-tint-700: #f7d7cd;
+--color-noris-warn-orange-tint-800: #fae4de;
+--color-noris-warn-orange-tint-900: #fcf1ee;
