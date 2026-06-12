@@ -30,15 +30,15 @@ const Footer = () => {
               >
                 <a href="/" className="relative">
                   <Image
-                    width={110}
-                    height={80}
+                    width={177}
+                    height={30}
                     src="/images/logo/logo-light.svg"
                     alt="Logo"
                     className="dark:hidden"
                   />
                   <Image
-                    width={110}
-                    height={80}
+                    width={177}
+                    height={30}
                     src="/images/logo/logo-dark.svg"
                     alt="Logo"
                     className="hidden dark:block"
