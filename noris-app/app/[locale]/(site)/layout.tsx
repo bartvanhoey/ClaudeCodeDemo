@@ -1,6 +1,10 @@
 import { Inter } from "next/font/google";
-import "../globals.css";
+import "../../globals.css";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { NextIntlClientProvider, hasLocale } from "next-intl";
+import { setRequestLocale } from "next-intl/server";
+import { routing } from "@/i18n/routing";
 import Proivder from "./Provider";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -13,15 +17,31 @@ export const metadata: Metadata = {
   },
 };
 
-export default function RootLayout({
+export function generateStaticParams() {
+  return routing.locales.map((locale) => ({ locale }));
+}
+
+export default async function RootLayout({
   children,
+  params,
 }: {
   children: React.ReactNode;
+  params: Promise<{ locale: string }>;
 }) {
+  const { locale } = await params;
+
+  if (!hasLocale(routing.locales, locale)) {
+    notFound();
+  }
+
+  setRequestLocale(locale);
+
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang={locale} suppressHydrationWarning>
       <body className={`dark:bg-black ${inter.className}`}>
-        <Proivder>{children}</Proivder>
+        <NextIntlClientProvider>
+          <Proivder>{children}</Proivder>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
