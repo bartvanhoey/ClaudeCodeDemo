@@ -1,1 +1,28 @@
-{}
+{
+  "ProductsPage": {
+    "title": "Produkte",
+    "createProduct": "Produkt erstellen",
+    "items": {
+      "1": {
+        "title": "Noris Starter Kit",
+        "description": "Alles, was Sie für den Start Ihres ersten Projekts benötigen."
+      },
+      "2": {
+        "title": "Noris Pro Bundle",
+        "description": "Fortschrittliche Tools und Komponenten für wachsende Teams."
+      },
+      "3": {
+        "title": "Noris Analytics Suite",
+        "description": "Verfolgen Sie die Leistung mit Echtzeit-Dashboards."
+      },
+      "4": {
+        "title": "Noris Design System",
+        "description": "Eine vollständige Bibliothek wiederverwendbarer UI-Komponenten."
+      },
+      "5": {
+        "title": "Noris Enterprise",
+        "description": "Individuelle Lösungen und dedizierter Support für Unternehmen."
+      }
+    }
+  }
+}

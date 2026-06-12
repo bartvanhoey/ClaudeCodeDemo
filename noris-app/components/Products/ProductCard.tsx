@@ -1,9 +1,13 @@
 import React from "react";
 import Image from "next/image";
+import { useTranslations } from "next-intl";
 import { Product } from "@/types/product";
 
 const ProductCard = ({ product }: { product: Product }) => {
-  const { image, title, description, price } = product;
+  const { id, image, price } = product;
+  const t = useTranslations("ProductsPage.items");
+  const title = t(`${id}.title`);
+  const description = t(`${id}.description`);
 
   return (
     <div className="rounded-lg border border-stroke bg-white p-4 shadow-solid-3 transition-all hover:shadow-solid-4 dark:border-strokedark dark:bg-blacksection">
