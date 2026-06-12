@@ -5,7 +5,7 @@ import productsData from "./productsData";
 const Products = () => {
   return (
     <section className="py-16 md:py-20 lg:py-28">
-      <div className="mx-auto max-w-c-1280 px-4 md:px-8 xl:px-0">
+      <div className="mx-auto mt-15 max-w-c-1280 px-4 md:px-8 xl:mt-20 xl:px-0">
         <div className="mb-10 flex items-center justify-between">
           <h1 className="text-3xl font-bold text-black dark:text-white xl:text-hero">
             Products
