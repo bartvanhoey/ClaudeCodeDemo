@@ -2,9 +2,52 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: "Nekst";
+  src: url("/fonts/Nekst-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nekst";
+  src: url("/fonts/Nekst-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nekst";
+  src: url("/fonts/Nekst-Medium.woff2") format("woff2");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nekst";
+  src: url("/fonts/Nekst-SemiBold.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nekst";
+  src: url("/fonts/Nekst-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nekst";
+  src: url("/fonts/Nekst-Black.woff2") format("woff2");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   --font-*: initial;
-  --font-inter: Inter, sans-serif;
+  --font-inter: Nekst, Inter, sans-serif;
 
   --color-current: currentColor;
   --color-transparent: transparent;
@@ -19,14 +62,98 @@
   --color-black: #181c31;
   --color-blackho: #2c3149;
   --color-blacksection: #1c2136;
-  --color-primary: #006bff;
-  --color-primaryho: #0063ec;
-  --color-meta: #20c5a8;
+  --color-primary: #00693f;
+  --color-primaryho: #005432;
+  --color-meta: #00d27e;
   --color-waterloo: #757693;
   --color-manatee: #999aa1;
   --color-alabaster: #fbfbfb;
   --color-zumthor: #edf5ff;
   --color-socialicon: #d1d8e0;
+
+  /* Noris green shades */
+  --color-noris-green-50: #00d27e;
+  --color-noris-green-100: #00bd71;
+  --color-noris-green-200: #00a864;
+  --color-noris-green-300: #009358;
+  --color-noris-green-400: #007e4b;
+  --color-noris-green-500: #00693f;
+  --color-noris-green-600: #005432;
+  --color-noris-green-700: #003f25;
+  --color-noris-green-800: #002a19;
+  --color-noris-green-900: #00150c;
+
+  /* Noris dark green shades */
+  --color-noris-dark-green-50: #014948;
+  --color-noris-dark-green-100: #004140;
+  --color-noris-dark-green-200: #003a39;
+  --color-noris-dark-green-300: #003332;
+  --color-noris-dark-green-400: #002b2b;
+  --color-noris-dark-green-500: #002424;
+  --color-noris-dark-green-600: #001d1c;
+  --color-noris-dark-green-700: #001515;
+  --color-noris-dark-green-800: #000e0e;
+  --color-noris-dark-green-900: #000707;
+
+  /* Noris fresh green shades */
+  --color-noris-fresh-green-50: #c5f120;
+  --color-noris-fresh-green-100: #b1d81c;
+  --color-noris-fresh-green-200: #9dc019;
+  --color-noris-fresh-green-300: #89a816;
+  --color-noris-fresh-green-400: #769013;
+  --color-noris-fresh-green-500: #627810;
+  --color-noris-fresh-green-600: #4e600c;
+  --color-noris-fresh-green-700: #3b4809;
+  --color-noris-fresh-green-800: #273006;
+  --color-noris-fresh-green-900: #131803;
+
+  /* Noris sky blue shades */
+  --color-noris-sky-blue-50: #6bdff0;
+  --color-noris-sky-blue-100: #60c8d8;
+  --color-noris-sky-blue-200: #55b2c0;
+  --color-noris-sky-blue-300: #4a9ca8;
+  --color-noris-sky-blue-400: #408590;
+  --color-noris-sky-blue-500: #356f78;
+  --color-noris-sky-blue-600: #2a5960;
+  --color-noris-sky-blue-700: #204248;
+  --color-noris-sky-blue-800: #152c30;
+  --color-noris-sky-blue-900: #0a1618;
+
+  /* Noris ocean blue shades */
+  --color-noris-ocean-blue-50: #05a4d6;
+  --color-noris-ocean-blue-100: #0493c0;
+  --color-noris-ocean-blue-200: #0483ab;
+  --color-noris-ocean-blue-300: #037295;
+  --color-noris-ocean-blue-400: #036280;
+  --color-noris-ocean-blue-500: #02526b;
+  --color-noris-ocean-blue-600: #024155;
+  --color-noris-ocean-blue-700: #013140;
+  --color-noris-ocean-blue-800: #01202a;
+  --color-noris-ocean-blue-900: #001015;
+
+  /* Noris purple shades */
+  --color-noris-purple-50: #9f85d3;
+  --color-noris-purple-100: #8f77bd;
+  --color-noris-purple-200: #7f6aa8;
+  --color-noris-purple-300: #6f5d93;
+  --color-noris-purple-400: #5f4f7e;
+  --color-noris-purple-500: #4f4269;
+  --color-noris-purple-600: #3f3554;
+  --color-noris-purple-700: #2f273f;
+  --color-noris-purple-800: #1f1a2a;
+  --color-noris-purple-900: #0f0d15;
+
+  /* Noris warn orange shades */
+  --color-noris-warn-orange-50: #e67c5a;
+  --color-noris-warn-orange-100: #cf6f51;
+  --color-noris-warn-orange-200: #b86348;
+  --color-noris-warn-orange-300: #a1563e;
+  --color-noris-warn-orange-400: #8a4a36;
+  --color-noris-warn-orange-500: #733e2d;
+  --color-noris-warn-orange-600: #5c3124;
+  --color-noris-warn-orange-700: #45251b;
+  --color-noris-warn-orange-800: #2e1812;
+  --color-noris-warn-orange-900: #170c09;
 
   --text-metatitle: 12px, 20px;
   --text-sectiontitle: 14px, 22px;

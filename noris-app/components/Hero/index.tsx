@@ -11,24 +11,30 @@ const Hero = () => {
 
   return (
     <>
-      <section className="overflow-hidden pb-20 pt-35 md:pt-40 xl:pb-25 xl:pt-46">
+      <section className="relative overflow-hidden bg-noris-dark-green-900 pb-20 pt-35 text-white md:pt-40 xl:pb-25 xl:pt-46">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className=" md:w-1/2">
-              <h4 className="mb-4.5 text-lg font-medium text-black dark:text-white">
-                🔥 Solid - A Complete SaaS Web Template
-              </h4>
-              <h1 className="mb-5 pr-16 text-3xl font-bold text-black dark:text-white xl:text-hero ">
-                Free Next.js Template for {"   "}
-                <span className="relative inline-block before:absolute before:bottom-2.5 before:left-0 before:-z-1 before:h-3 before:w-full before:bg-titlebg dark:before:bg-titlebgdark ">
-                  SaaS
+              <div className="mb-4.5 flex flex-wrap gap-2.5">
+                <span className="rounded-full bg-noris-green-500 px-4 py-1 text-sm font-medium text-white">
+                  Transport technology
                 </span>
+                <span className="rounded-full bg-noris-green-700 px-4 py-1 text-sm font-medium text-white">
+                  Shipbuilding
+                </span>
+              </div>
+              <h1 className="mb-5 pr-16 text-3xl font-bold text-white xl:text-hero ">
+                The people who make {"   "}
+                <span className="relative inline-block text-noris-green-50">
+                  Noris
+                </span>{" "}
+                reliable
               </h1>
-              <p>
-                Solid Pro - Packed with all the key integrations you need for
-                swift SaaS startup launch, including - Auth, Database, Sanity
-                Blog, Essential Components, Pages and More. Built-winth -
-                Next.js 16, React 19 and TypeScript.
+              <p className="text-noris-dark-green-tint-700">
+                Technology that our customers and partners can rely on. Solutions
+                that work under extreme conditions for many years. Our employees
+                ensure this with their expertise and passion for technology, day
+                after day.
               </p>
 
               <div className="mt-10">
@@ -39,18 +45,18 @@ const Hero = () => {
                       onChange={(e) => setEmail(e.target.value)}
                       type="text"
                       placeholder="Enter your email address"
-                      className="rounded-full border border-stroke px-6 py-2.5 shadow-solid-2 focus:border-primary focus:outline-hidden dark:border-strokedark dark:bg-black dark:shadow-none dark:focus:border-primary"
+                      className="rounded-full border border-noris-dark-green-300 bg-transparent px-6 py-2.5 text-white placeholder:text-noris-dark-green-tint-500 shadow-solid-2 focus:border-noris-green-50 focus:outline-hidden dark:shadow-none"
                     />
                     <button
                       aria-label="get started button"
-                      className="flex rounded-full bg-black px-7.5 py-2.5 text-white duration-300 ease-in-out hover:bg-blackho dark:bg-btndark dark:hover:bg-blackho"
+                      className="flex rounded-full bg-noris-green-50 px-7.5 py-2.5 font-medium text-noris-dark-green-900 duration-300 ease-in-out hover:bg-noris-green-tint-200"
                     >
                       Get Started
                     </button>
                   </div>
                 </form>
 
-                <p className="mt-5 text-black dark:text-white">
+                <p className="mt-5 text-noris-dark-green-tint-700">
                   Try for free no credit card required.
                 </p>
               </div>
