@@ -16,6 +16,8 @@ It's designed for developers who want to stay in the terminal and have Claude ac
 
 ## Core Concepts (in plain words)
 
+**CLAUDE.md** is a project memory file. Notes you put there (coding style, key commands, conventions) are loaded automatically, so Claude follows your project's rules without being reminded.
+
 **Agentic** means Claude doesn't just answer once — it works in a loop. It reads files, runs a command, looks at the result, and decides the next step on its own until the goal is done.
 
 **Context** is everything Claude can "see" at one time: your prompt, the files it has opened, and command output. It's like Claude's short-term memory for the current task. The bigger the task, the more context it uses.
@@ -59,10 +61,6 @@ MCP is how Claude Code connects to the outside world. Think of MCP servers as pl
 
 **Skills / slash commands** are reusable shortcuts you trigger with a `/`. They bundle a set of instructions so a multi-step workflow runs the same way every time.
 
-**Agents (subagents)** are helpers Claude can spin up to handle a focused job — like searching the codebase or reviewing code — without cluttering your main session's context.
-
-**CLAUDE.md** is a project memory file. Notes you put there (coding style, key commands, conventions) are loaded automatically, so Claude follows your project's rules without being reminded.
-
 ### Useful Built-in Commands
 
 - /init: Initialize a new CLAUDE.md file with codebase documentation
@@ -82,7 +80,7 @@ MCP is how Claude Code connects to the outside world. Think of MCP servers as pl
 You can create custom skills and commands to automate specific tasks in your workflow. For example, you could create a skill to write a commit message, or one to generate a component from a description.
 
 - /commit-message: a custom skill to generate a commit message based on the changes made
-- /component: a custom skill to generate a new component based on a description
+- /create-component: a custom skill to generate a new component based on a description
   
 ## Demo Time
 
