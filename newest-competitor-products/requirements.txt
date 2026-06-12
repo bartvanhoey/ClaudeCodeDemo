@@ -1,0 +1,7 @@
+# Python dependencies for tools/
+requests
+beautifulsoup4
+reportlab
+
+# Optional: install if a competitor site requires JS rendering (Stage 2 fallback)
+# playwright
